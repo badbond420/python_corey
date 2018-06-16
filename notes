@@ -33,3 +33,23 @@ ex:
 - generatoer is way faster
 - tuple(i for i in (1, 2, 3)) is tupple comprihanseion, as () taken for generator
 
+# decoratoer file:decorator.py
+- decorater is to dynamically modify a function.
+- the idea is in decorater definition collect the return from the function,
+  may modify result or do some ather action and re-return again. then return the function
+- no mater , whether the decorated function return or not, but keeping return in decorater defination, doesnt harm
+- decorater class: no need to call def inside def
+- stacking decorater gets issu in geting name of the decorated function
+- functools module will help in getting rid of it.
+- decorater wit args, is like to add onemore level outer function, with arg, this arg to be
+  handled in side inner definition
+- this type of decorater , should be defined fully ones, before use.
+
+ex: callable object
+class my_callable_calss:
+    def __call__(self, name):
+        return "hi "+ name
+
+my_callable_object = my_callable_calss()
+print(my_callable_object("bibek"))
+
