@@ -56,8 +56,17 @@ print(my_callable_object("bibek"))
 # Named tupple
 ! will revisit these collections later.
 
-# classes and instances
+# classes and instances oop1 file:class_object.py
 - encapsulaton is to pack attributes and methods in a single stuff, so called
+
+# class variables file:class_variables.py
+- unlike attributes/property class variables are bound to classes not object
+- class variables are availables to all instances
+- trying to modify class varible in instance level, adds a instance attribute overriding the class variable.
+- ClassName.calss_var = 5 : also adds it to ClassName.__dict_ as class are also object.
+- constants used in class are recomended to keep as class var, its eacier to access those const by class name
+- object counter also one var, whic increased wit init method
+- type(self).var evaluates to ClassName.var: its a good practice as in inheritance.
 
 
 

@@ -9,4 +9,4 @@ class emp:
 
 hari = emp("Hari", "Mantry")
 print(hari.get_name())
-print(hari.email)
+print(hari.__dict__)
