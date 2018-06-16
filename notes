@@ -53,3 +53,12 @@ class my_callable_calss:
 my_callable_object = my_callable_calss()
 print(my_callable_object("bibek"))
 
+# Named tupple
+! will revisit these collections later.
+
+# classes and instances
+- encapsulaton is to pack attributes and methods in a single stuff, so called
+
+
+
+
