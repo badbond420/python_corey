@@ -1,10 +1,27 @@
-# exception handling
+# exception handling file:exception_handling.py
 - syntax
 try:
-    pass
+    # keep sensitive  initial code here
 except:
-    pass
+    # handle exceptions
 else:
-    pass
+    # if no exception, then write the logic here
 finally:
-    pass
+    # no matter what, this block will execute,
+    #  so its for cleaning up
+- specific exception first, generic exception last.
+- except FileNotFoundError as e; here from e we can get lots of details
+- user defined exception detain in exception_handling.py file
+
+# duck typing file:duck_typing.py
+- the idea is ask for forgivness, if something go wrong. asuming somting will work.
+- as you asume , you get a duck, and it will quack, if its a person, then ask forgiveness in code with try block.
+- it faster, as u handle handle exception ones, rather than validation objects numerous time.
+- race condition, is like quickly somthing changed, which is not excepted
+ex:
+    if os.access("file"):
+        # quickly file deleted by other event
+        # as no exception handling, unavoidable situation occured
+        fh.open('file')
+    else:
+        print("file not accessable")
