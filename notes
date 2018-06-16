@@ -1,0 +1,10 @@
+# exception handling
+- syntax
+try:
+    pass
+except:
+    pass
+else:
+    pass
+finally:
+    pass
