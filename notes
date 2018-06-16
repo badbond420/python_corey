@@ -25,3 +25,11 @@ ex:
         fh.open('file')
     else:
         print("file not accessable")
+# generators file:generator_stuff.py
+- yeild makes a function generator
+- instade of creating and returnig a full list, use generater
+- next(gen_obj) also works line a iterator
+- keeping () instade of [] in list comprihansen, creates a generator.
+- generatoer is way faster
+- tuple(i for i in (1, 2, 3)) is tupple comprihanseion, as () taken for generator
+
