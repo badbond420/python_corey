@@ -66,7 +66,42 @@ print(my_callable_object("bibek"))
 - ClassName.calss_var = 5 : also adds it to ClassName.__dict_ as class are also object.
 - constants used in class are recomended to keep as class var, its eacier to access those const by class name
 - object counter also one var, whic increased wit init method
-- type(self).var evaluates to ClassName.var: its a good practice as in inheritance.
+- type(self).var evaluates to ClassName.var in inst method: its a good practice as in inheritance.
+
+# classmethod vs staticmethod file:class_static_method.py
+- if we make a class variable a pvt variable, to manage that we will use class method.
+- we cant address a pvt class variable with a instance method, as we cant use that inst method in class level.
+- class methods are mostly used in factory method
+- accessing class variables in static method has a problem in inheritance, as
+- calling class methods from ins works fine.
+ex:
+    @staticmethod
+    def about():
+        print("This class is about {}!".format(Pets.name) # here we cant use type(self)
+
+better method is:
+    @classmethod
+    def about():
+        print("This class is about {}!".format(class.name) # it works well in
+- class method is used for alternative constructers or factory methods.
+- in datetime module, many factory methods are used
+- let sey, someone using our class, and he gets constructer params as a string, so rather that, he writes code to handle the inputs
+  and parr to class for creating a object, a pre defined factory function will do it.
+- better to use staticmethod where no class/inst bound variables are used.
+- static method can be asignd to a class from any randum function, thereafter it will behavie like static method
+ex:
+def addition(a , b):
+    return a + b
+
+Emp.addition = addition
+print(Emp.addition(9,8))
+
+- event thr ulternate , works too
+ex:
+junk_func = Emp.is_working_day
+print(junk_func(my_date))
+
+
 
 
 
