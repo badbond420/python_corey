@@ -143,11 +143,37 @@ print(hari + bibek)
 print(Emp.__add__(hari,bibek))
 both are same.
 
+: property file:property.py
 
+- instade of using getter setter methods,pythonic way is to use property
+- the idea of getter setter is to validate the attribute as well as manipulate private variables.
+- encapsulation is not only keeping in sangle rapper but also validate the attributs by validation of getter and setter.
+- getter . setter are not only validationg pvt variables, but also setting other accompany attributs as well.like full_name
+- using setter also dynamically modify fname and laname too.
+- better explained in example.
+- setter syntax is li weired,
 
+ex:
+@first_name.setter
+    def first_name(self,value):
+        self.__fname = value
 
+is for
+self.first_name = a # here "value"  is for "a" like formal/actual argumant.
 
+- property also can be used inside the class itseld, not only to expose variables to outer world
+bibek.fulname = "Kalu Mantry" # ioutside class definition
 
+class Emp:
+    def __init__(self,fname,lname):
+        self.first_name = fname  # inside definition
+        self.last_name = lname
 
+    @property
+    def first_name(self):
+        return self.__fname
 
-
+    @first_name.setter
+    def first_name(self,value):
+        self.__fname = value
+# watchfull about this
