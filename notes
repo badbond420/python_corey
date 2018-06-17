@@ -58,6 +58,19 @@ print(my_callable_object("bibek"))
 
 # classes and instances oop1 file:class_object.py
 - encapsulaton is to pack attributes and methods in a single stuff, so called
+-  in __init__ method definition  you can call other instance methods as well
+- similarly in one ins method definition, you can call other inst methods as well.
+ex:
+class Emp:
+    def __init__(self,fname,lname):
+        self.first_name = fname
+        self.last_name = lname
+        self.email = fname + "." + lname + "@domain.com"
+        self.full_name = self.get_name()
+
+    def get_name(self):
+        return self.first_name + " " + self.last_name
+
 
 # class variables file:class_variables.py
 - unlike attributes/property class variables are bound to classes not object
@@ -100,6 +113,20 @@ print(Emp.addition(9,8))
 ex:
 junk_func = Emp.is_working_day
 print(junk_func(my_date))
+
+: inheritance file:inheritance.py
+- in hertiance is used to re use code and functionality.
+ex:
+class Developer(Emp):
+    pass
+
+hari = Developer("hari","mantry")
+- it works as you are not overridiing  __init__ in Developer class
+- if you re-define __init__ in child class then, have to explicitly call parent calss function.
+- you you want tot tally revamp the new method (method over loading), in this case no need to call the parent class method.
+_ init on any method, input can be anything, not only number or string. we can ad emp obj or any object even hot object.
+- think of fully object, dont thing only number or string
+
 
 
 
