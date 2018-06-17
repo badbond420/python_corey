@@ -178,9 +178,26 @@ class Emp:
         self.__fname = value
 - watchfull about this
 
-# context manger
+# context manger file:context_manager.py
 - this is used to efectivly close db connactions, handle cleanups for some stuff
 - __enter__ and __exit__ is of setup and teardown methods
 ! will revisit it again
+
+#str repr file:str_repr.py
+- str is not always ready for eval.where as repr does.
+- repr return returns the same obj, when done eval().
+- repr is ment for developers as it gives you representation of object
+ex:
+    def __repr__(self):
+        return 'Emp("{}","{}")'.format(self.first_name,self.last_name)
+        # return "lol" # this is tupid
+
+- this is a valid repr, but not any randum stuff in repr witt return the main object by eval
+- repr is mor of designig a info so developer can make sense about the object.
+
+
+
+
+
 
 
