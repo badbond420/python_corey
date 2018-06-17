@@ -32,6 +32,16 @@ ex:
 - keeping () instade of [] in list comprihansen, creates a generator.
 - generatoer is way faster
 - tuple(i for i in (1, 2, 3)) is tupple comprihanseion, as () taken for generator
+-
+def mygen():
+    yeild 1
+    x = "lol" # it execute after 1st yeld
+    yeild x
+like wise
+def anither_gen():
+    for i  in range(6)
+        yeild i
+        print("lol") # this is valid and execute on next run
 
 # decoratoer file:decorator.py
 - decorater is to dynamically modify a function.
@@ -195,7 +205,19 @@ ex:
 - this is a valid repr, but not any randum stuff in repr witt return the main object by eval
 - repr is mor of designig a info so developer can make sense about the object.
 
+# else block in loops
+- it make sense if you have something want to do with brak condition, if that doesnt occure, then else executes
+ex: check list has even number
+def contains_even_number(l):
+    for ele in l:
+        if ele % 2 == 0:
+            print ("list contains an even number")
+            break
 
+    # This else executes only if break is NEVER
+    # reached and loop terminated after all iterations.
+    else:
+        print ("list does not contain an even number")
 
 
 
