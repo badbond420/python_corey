@@ -127,6 +127,24 @@ hari = Developer("hari","mantry")
 _ init on any method, input can be anything, not only number or string. we can ad emp obj or any object even hot object.
 - think of fully object, dont thing only number or string
 
+: dunder methods file:dunder.py
+- using dunder methods are called opereter overloading in python, as we define __add__ for our kind of object,
+- where as there is a different impimentetion of __add_ for inbuilts(numb,str) or may be different for ther type of object.
+- as we  know * has differnt behaviour of nums, and diffrent for string.
+- we can define * behaviour with our defined object. let see
+- Print always print str(), takes repr if str() is not defined.
+- python console retrns repr().
+- better to define both always.
+- definig __add__, __len__ are example implemented in py file.
+_ in __add__ definition, you can check for other'object type and custm logic can applied if heterogenious objects are mentioned.
+ex: also possible
+
+print(hari + bibek)
+print(Emp.__add__(hari,bibek))
+both are same.
+
+
+
 
 
 
