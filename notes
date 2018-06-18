@@ -219,7 +219,22 @@ def contains_even_number(l):
     else:
         print ("list does not contain an even number")
 
+: idempotence file:idempotence.py
+- it means f(f(x)) == f(x)
+- some functions are idempotence and some are not
+- idempotence function is abs()
+! in http request get,put,delete(confusion) are idempotence but not post
 
+:closure
+- the variable which propagate inside outer to inner function is called, free variable.
+! writ add3, add2 in both closure and in oop
 
+: memoization file:memoizaton.py
+- cachhing some computitional result , so that repeated expensive compution can be ignored.
+! accssing and modifying global var in function without keeping global/ chk scope module
 
+: Ims questioanire
+! solve with permutation and combinition
+! https://github.com/tchangw/Python-Exercise
 
+: ! logic to check time taken to long floating number
