@@ -232,9 +232,9 @@ def contains_even_number(l):
 - greeting = 'I am {} years old and my name is {}'.format(age,name) #ordered
 - in interpoletion you dont have to typecat number or other object type ro string .i.e. no need str(age)
 
-:closure
+:closure closure.py
 - the variable which propagate inside outer to inner function is called, free variable.
-! writ add3, add2 in both closure and in oop
+-s write add3, add2 in both closure and in oop
 
 : memoization file:memoizaton.py
 - cachhing some computitional result , so that repeated expensive compution can be ignored.
