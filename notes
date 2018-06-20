@@ -234,10 +234,11 @@ def contains_even_number(l):
 
 :closure closure.py
 - the variable which propagate inside outer to inner function is called, free variable.
--s write add3, add2 in both closure and in oop
+- write add3, add2 in both closure and in oop
 
 : memoization file:memoizaton.py
 - cachhing some computitional result , so that repeated expensive compution can be ignored.
+! get the notes from plural sight funda
 ! accssing and modifying global var in function without keeping global/ chk scope module
 
 : Ims questioanire
