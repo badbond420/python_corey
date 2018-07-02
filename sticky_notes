@@ -1,0 +1,78 @@
+3. json/yml=
+4. re=
+6.argparse=
+7.Logging=
+8 storage_array obj, and smash=
+11.subprocess
+9. multi thread/processing with logging
+----------------
+11. proprty in __dict__, and use of direct input to attribute
+12. matt's decoreter =
+13.fileinput
+13.compare 2 dict and list
+14. context manger
+async def _verify_controller_reboot
+15.http://sujitpal.blogspot.in/2010/11/using-ssh-in-python-with-paramiko.html
+16.pytest basics
+1. -> in pynt
+- (*, rest_client, target_volume_group, capacity: str=DEFAULT_VOLUME_CAPACITY
+17.repr str
+11.paramiki
+12. paramiko async
+18. sftp paramiko dir
+10. request/pynt
+############################
+shell
+- function and returns
+- iptables
+-netstat
+-tapans qs
+-syslog
+-log rotation
+-logger
+
+docker
+- compose,sawrm
+jenkins
+- ldap
+git/git lab
+cicd
+-------------------------------------------
+ansible
+#############################
++Git/GitHub
++Docker
+Python(eu>oop>matt books)
+(concepts)
+exception
+logging
+idomatic+bestpractice+module
++Ansible
+host.py, os.reboot() params
+#############################
+docker
+jenkins
+git/hithub/gitlab(gist,)
+DNS/ Route53
+NFS
+Uday's Gitlab Project
+Kubernaties
+#############################
+codingdojd
+python-course.eu
+o'reilly python beyond the basics
+matt'sbook
+#############################
+executable  modules and setup.py
+latebinding
+understand os module import
+try to understand code of pytest
+#############################
+gitlab,gitlab-ci
+redis,rabbit,mq,mongodb
+aws components
+apache webserver (usage and conf),nginx webserver,HA proxy,reverse proxy,
+consul,sensu.
+php,lamp, application setup
+netstats,dns,iptables
+layer-4 (TCP and UDP) and layer-7 (HTTP and HTTPS)
