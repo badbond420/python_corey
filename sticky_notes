@@ -5,6 +5,9 @@
 8 storage_array obj, and smash=
 11.subprocess
 9. multi thread/processing with logging
+08. adder function by closure, class
+23. how tcp, udp, http, ssl, ssh works
+24. twisted framework
 ----------------
 11. proprty in __dict__, and use of direct input to attribute
 12. matt's decoreter =

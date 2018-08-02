@@ -247,3 +247,11 @@ def contains_even_number(l):
 
 
 : ! logic to check time taken to long floating number
+
+###Delete it
+# engine = create_engine('postgres://lmrdsaij:5Vcq6p8zZFIAQEN2jTrWEnwtkqlJ7taD@baasu.db.elephantsql.com:5432/lmrdsaij')
+    engine = create_engine('postgres://sonata:87654321@sonata.ce8slywlzw82.us-east-1.rds.amazonaws.com:5432/sonata')
+    try:
+        df.to_sql('custodian_load', engine, if_exists='append',index=False)
+    except Exception as e :
+        print(str(e))
